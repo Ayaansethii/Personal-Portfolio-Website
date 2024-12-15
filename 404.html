@@ -1,6 +1,13 @@
-<script>
-    // Redirect to the index.html for React routes
-    const redirectTo = window.location.pathname.split('/').slice(1).join('/');
-    window.location.href = `/${redirectTo}`;
-  </script>
-  
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url='/'">
+    <script>
+      // Redirect all 404 routes to index.html for React Router
+      window.location.replace('/');
+    </script>
+  </head>
+  <body>
+    <p>If you are not redirected, click <a href="/">here</a>.</p>
+  </body>
+</html>
