@@ -1,6 +1,8 @@
 import { HERO_CONTENT } from "../constants";
 import myPic from "../assets/AyaanPic.png";
 import { motion } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
+import { useEffect, useState } from 'react';
 
 const container = (delay) => ({
     hidden: {x: -100, opacity: 0},
@@ -12,6 +14,7 @@ const container = (delay) => ({
 });
 
 const AboutMe = () => {
+
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -28,8 +31,24 @@ const AboutMe = () => {
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-            className="bg-animated-gradient bg-clip-text text-4xl tracking-tight text-transparent">
-              Computer Engineering Student
+            className="bg-animated-gradient bg-clip-text text-4xl tracking-tight text-transparent"
+            >
+              
+
+                <Typewriter
+                  words={[
+                    'Computer Engineer',
+                    'Software Engineer',
+                    'Future Innovator',
+                  ]}
+                  loop={true}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={60}
+                  deleteSpeed={40}
+                  delaySpeed={1500}
+                />
+                
             </motion.span>
             <motion.p 
             variants={container(1)}

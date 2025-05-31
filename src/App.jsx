@@ -5,6 +5,9 @@ import PersonalDesc from "./components/PersonalDesc";
 import Tech from "./components/Tech"
 import Projects from "./components/Projects";
 
+
+
+
 const App = () => {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
