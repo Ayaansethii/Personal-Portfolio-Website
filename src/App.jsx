@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import PersonalDesc from "./components/PersonalDesc";
 import Tech from "./components/Tech"
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
         <Navbar />
         <AboutMe />
         <PersonalDesc />
+        <Experience></Experience>
         <Tech />
         <Projects />
       </div>
